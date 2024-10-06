@@ -8,8 +8,8 @@ abstract public class BaseTest
 {
     public void setUp()
     {
-        WebDriverManager.safaridriver().setup();
-        Configuration.browser = "safari";
+        WebDriverManager.chromedriver().setup();
+        Configuration.browser = "chrome";
         Configuration.driverManagerEnabled = true;
         Configuration.browserSize = "1920x1080";
         Configuration.headless = false;

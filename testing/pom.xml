@@ -22,7 +22,7 @@
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-safari-driver</artifactId>
+            <artifactId>selenium-chrome-driver</artifactId>
             <version>3.141.5</version>
         </dependency>
         <dependency>
