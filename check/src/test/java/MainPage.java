@@ -17,6 +17,7 @@ public class MainPage
     {
         clickOnButon.setValue(search);
         clickOnButon.sendKeys(Keys.ENTER);
+        return new SearchPage();
     }
 
 }
