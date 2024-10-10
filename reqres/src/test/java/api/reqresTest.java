@@ -15,23 +15,22 @@ public class reqresTest
     @Test
     public void checkAvatarAndIdTest()
     {
+        Specification.installSpecification(Specification.requestSpec(BASE_URL), Specification.responseSpec200());
         List<UserData> users = given()
                 .when()
-                .contentType(ContentType.JSON)
-                .get(BASE_URL + USER)
+                .get(USER)
                 .then().log().all()
                 .extract().body().jsonPath().getList("data", UserData.class);
-
         users.forEach(o -> Assert.assertTrue(o.getAvatar().contains(o.getId().toString())));
     }
 
     @Test
     public void checkOnEmail()
     {
+        Specification.installSpecification(Specification.requestSpec(BASE_URL), Specification.responseSpec200());
         List<UserData> users = given()
                 .when()
-                .contentType(ContentType.JSON)
-                .get(BASE_URL + USER)
+                .get(USER)
                 .then().log().all()
                 .extract().body().jsonPath().getList("data", UserData.class);
         Assert.assertTrue(users.stream().allMatch(o -> o.getEmail().endsWith("@reqres.in")));
@@ -40,14 +39,13 @@ public class reqresTest
     @Test
     public void checkIdAndAvatar()
     {
+        Specification.installSpecification(Specification.requestSpec(BASE_URL), Specification.responseSpec200());
         List<UserData> users = given()
                 .when()
-                .contentType(ContentType.JSON)
-                .get(BASE_URL + USER)
+                .get(USER)
                 .then().log().all()
                 .extract().body().jsonPath().getList("data", UserData.class);
         users.forEach(o -> Assert.assertTrue(o.getAvatar().contains(o.getId().toString())));
     }
-    
 }
 
