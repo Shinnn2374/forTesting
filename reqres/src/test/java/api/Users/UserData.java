@@ -1,4 +1,4 @@
-package api;
+package api.Users;
 
 public class UserData
 {

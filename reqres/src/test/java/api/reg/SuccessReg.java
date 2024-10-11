@@ -1,4 +1,4 @@
-package api;
+package api.reg;
 
 public class SuccessReg
 {
@@ -6,7 +6,8 @@ public class SuccessReg
     private String token;
 
 
-    public SuccessReg(Integer id, String token) {
+    public SuccessReg(Integer id, String token)
+    {
         this.id = id;
         this.token = token;
     }

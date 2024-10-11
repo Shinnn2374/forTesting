@@ -1,4 +1,4 @@
-package api;
+package api.reg;
 
 public class Register
 {
