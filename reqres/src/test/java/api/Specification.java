@@ -29,6 +29,12 @@ public class Specification
                 .expectStatusCode(400)
                 .build();
     }
+    public static ResponseSpecification responseSpecUnique(int status)
+    {
+        return new ResponseSpecBuilder()
+                .expectStatusCode(status)
+                .build();
+    }
 
     public static void installSpecification(RequestSpecification request, ResponseSpecification response)
     {
