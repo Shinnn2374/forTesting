@@ -1,15 +1,18 @@
 package api;
 
 import api.Users.UserData;
-import api.date.ColorsData;
+import api.data.ColorsData;
 import api.reg.Register;
 import api.reg.SuccessReg;
 import api.reg.UnSuccessReg;
+import api.register.Man;
+import api.register.ManResponse;
 import org.junit.Assert;
 import org.junit.Test;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.given;
 
 
@@ -109,5 +112,51 @@ public class reqresTest
                 .delete("api/users/2")
                 .then().log().all();
     }
+
+    @Test
+    public void getSingleUserTest()
+    {
+        Specification.installSpecification(Specification.requestSpec(BASE_URL), Specification.responseSpec200());
+        UserData user = given()
+                .when()
+                .get("api/users/2")
+                .then().log().all()
+                .extract().body().jsonPath().getObject("data", UserData.class);
+        Assert.assertNotNull(user);
+    }
+
+    @Test
+    public void singleUserNotFoundTest()
+    {
+        Specification.installSpecification(Specification.requestSpec(BASE_URL), Specification.responseSpecUnique(404));
+        given()
+                .when()
+                .get("api/users/23")
+                .then().log().all();
+    }
+
+    @Test
+    public void singleResourceTest()
+    {
+        Specification.installSpecification(Specification.requestSpec(BASE_URL), Specification.responseSpec200());
+        ColorsData data = given()
+                .when()
+                .get("api/unknow/2")
+                .then().log().all()
+                .extract().body().jsonPath().getObject("data", ColorsData.class);
+        Assert.assertNotNull(data);
+    }
+
+    @Test
+    public void singleResourceNotFoundTest()
+    {
+        Specification.installSpecification(Specification.requestSpec(BASE_URL), Specification.responseSpecUnique(404));
+        given()
+                .when()
+                .get("api/unknow/23")
+                .then().log().all();
+    }
+
+    
 }
 

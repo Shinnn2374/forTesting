@@ -1,4 +1,4 @@
-package api.date;
+package api.data;
 
 public class ColorsData
 {
