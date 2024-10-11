@@ -157,6 +157,6 @@ public class reqresTest
                 .then().log().all();
     }
 
-    
+
 }
 
