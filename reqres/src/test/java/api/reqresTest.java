@@ -109,11 +109,5 @@ public class reqresTest
                 .delete("api/users/2")
                 .then().log().all();
     }
-
-    @Test
-    public void dateTimeTest()
-    {
-        Specification.installSpecification(Specification.requestSpec(BASE_URL), Specification.responseSpec200());
-    }
 }
 
