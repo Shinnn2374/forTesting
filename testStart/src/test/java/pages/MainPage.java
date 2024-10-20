@@ -1,4 +1,4 @@
-/*
+package pages;/*
 main page https://appleinsider.ru/
  */
 
@@ -25,6 +25,6 @@ public class MainPage
     public void search(String text)
     {
         searchBox.setValue(text);
-        searchButton.sendKeys(Keys.ENTER);
+        searchBox.sendKeys(Keys.ENTER);
     }
 }

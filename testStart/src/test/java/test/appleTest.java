@@ -1,4 +1,9 @@
+package test;
+
+import org.junit.Assert;
 import org.junit.Test;
+import pages.MainPage;
+import pages.SearchPage;
 
 public class appleTest extends BaseTest
 {
@@ -10,6 +15,8 @@ public class appleTest extends BaseTest
     {
         MainPage mainPage = new MainPage(BASE_URL);
         mainPage.search(SEARCH_LINE);
-        int a = 0;
+        SearchPage searchPage = new SearchPage();
+        Boolean res = searchPage.getFirstHref().contains("iphone");
+        Assert.assertTrue(res);
     }
 }
