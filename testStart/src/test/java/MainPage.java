@@ -9,15 +9,16 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class MainPage
 {
+    private final SelenideElement searchButton = $x("//form");
+    private final SelenideElement searchBox = $x("//input");
+
     public MainPage(String link)
     {
         Selenide.open(link);
     }
 
-    private final SelenideElement searchButton = $x("//form");
-
-    public void clickOnSearch()
+    public void search(String text)
     {
-        searchButton.click();
+        searchButton.setValue(searchBox.);
     }
 }
