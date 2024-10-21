@@ -1,9 +1,9 @@
-package test;
+package PageObject.test;
 
 import org.junit.Assert;
 import org.junit.Test;
-import pages.MainPage;
-import pages.SearchPage;
+import PageObject.pages.MainPage;
+import PageObject.pages.SearchPage;
 
 public class appleTest extends BaseTest
 {
