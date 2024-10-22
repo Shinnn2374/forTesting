@@ -1,5 +1,9 @@
 package RestAssured;
 
+import RestAssured.pojos.login.SucLogin;
+import RestAssured.pojos.login.SucLoginResponse;
+import RestAssured.pojos.login.UnSucLogin;
+import RestAssured.pojos.login.UnSucLoginResponse;
 import RestAssured.pojos.register.SuccessfulReg;
 import RestAssured.pojos.register.SuccessfulRegResponse;
 import RestAssured.pojos.register.UnSuccessfulReg;
@@ -161,5 +165,31 @@ public class tests
         Assert.assertEquals(response.getError(), error);
     }
 
+    @Test
+    public void successLoginTest()
+    {
+        String token = "QpwL5tke4Pnpja7X4";
+        Specification.installSpecification(Specification.requestSpec(BASE_URL), Specification.responseSpec200());
+        SucLogin login = new SucLogin("eve.holt@reqres.in","cityslicka");
+        SucLoginResponse response = given()
+                .body(login)
+                .post("api/login")
+                .then().log().all()
+                .extract().body().as(SucLoginResponse.class);
+        Assert.assertEquals(response.getToken(), token);
+    }
 
+    @Test
+    public void unSuccessfulLoginTest()
+    {
+        String error = "Missing password";
+        Specification.installSpecification(Specification.requestSpec(BASE_URL), Specification.responseSpec400());
+        UnSucLogin login = new UnSucLogin("peter@klaven");
+        UnSucLoginResponse response = given()
+                .body(login)
+                .post("api/login")
+                .then().log().all()
+                .extract().body().as(UnSucLoginResponse.class);
+        Assert.assertEquals(response.getError(), error);
+    }
 }

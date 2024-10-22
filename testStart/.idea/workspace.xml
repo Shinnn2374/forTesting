@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d487ad8-793e-45f9-8d9a-15573685503b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/register/SuccessfulReg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/register/SuccessfulRegResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/register/UnSuccessfulReg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/register/UnSuccessfulRegResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/login/SucLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/login/SucLoginResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/login/UnSucLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/login/UnSucLoginResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/test/appleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObject/test/appleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssured/tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +47,7 @@
     "JUnit.tests.getUsersListTest.executor": "Run",
     "JUnit.tests.singleUserNotFoundTest.executor": "Run",
     "JUnit.tests.successfulReg.executor": "Run",
+    "JUnit.tests.unSuccessfulReg.executor": "Run",
     "JUnit.tests.updateUserTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -56,19 +58,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.tests.unSuccessfulReg">
-    <configuration name="tests.createUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in testStart">
+    <configuration name="All in testStart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testStart" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RestAssured.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="RestAssured" />
-      <option name="MAIN_CLASS_NAME" value="RestAssured.tests" />
-      <option name="METHOD_NAME" value="createUserTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in testStart" />
         <item itemvalue="JUnit.tests.unSuccessfulReg" />
         <item itemvalue="JUnit.tests.successfulReg" />
         <item itemvalue="JUnit.tests.deleteUserTest" />
         <item itemvalue="JUnit.tests.updateUserTest" />
-        <item itemvalue="JUnit.tests.createUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +162,7 @@
       <workItem from="1729536771130" duration="40000" />
       <workItem from="1729536816881" duration="1456000" />
       <workItem from="1729620652894" duration="753000" />
-      <workItem from="1729621413506" duration="3900000" />
+      <workItem from="1729621413506" duration="5046000" />
     </task>
     <servers />
   </component>
