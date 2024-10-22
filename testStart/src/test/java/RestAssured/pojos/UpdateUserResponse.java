@@ -4,14 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserData
+public class UpdateUserResponse
 {
-    private Integer id;
-    private String email;
-    private String first_name;
-    private String last_name;
-    private String avatar;
+    private String name;
+    private String job;
+    private Date updatedAt;
 }

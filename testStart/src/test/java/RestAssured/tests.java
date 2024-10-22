@@ -1,8 +1,10 @@
 package RestAssured;
 
-import RestAssured.pojos.ResourceData;
-import RestAssured.pojos.UserData;
-import com.codeborne.selenide.commands.As;
+import RestAssured.pojos.UpdateUserResponse;
+import RestAssured.pojos.datum.ResourceData;
+import RestAssured.pojos.datum.UserData;
+import RestAssured.pojos.User;
+import RestAssured.pojos.CreateUserResponse;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -84,7 +86,36 @@ public class tests
                 .then().log().all();
     }
 
-    
+    @Test
+    public void createUserTest()
+    {
+        Specification.installSpecification(Specification.requestSpec(BASE_URL), Specification.responseSpec201());
+        User user = new User("morpheus","leader");
+        CreateUserResponse response = given()
+                .body(user)
+                .post("api/users")
+                .then().log().all()
+                .extract().body().as(CreateUserResponse.class);
+        Assert.assertNotNull(response.getId());
+        Assert.assertNotNull(response.getName());
+        Assert.assertNotNull(response.getJob());
+        Assert.assertNotNull(response.getCreatedAt());
+    }
+
+    @Test
+    public void updateUserTest()
+    {
+        Specification.installSpecification(Specification.requestSpec(BASE_URL), Specification.responseSpec200());
+        User user = new User("morpheus","zion resident");
+        UpdateUserResponse response = given()
+                .body(user)
+                .put("api/users/2")
+                .then().log().all()
+                .extract().body().as(UpdateUserResponse.class);
+        Assert.assertNotNull(response.getName());
+        Assert.assertNotNull(response.getJob());
+        Assert.assertNotNull(response.getUpdatedAt());
+    }
 
 
 }
