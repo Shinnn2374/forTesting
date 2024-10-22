@@ -1,4 +1,4 @@
-package RestAssured.pojos;
+package RestAssured.pojos.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,9 +9,10 @@ import java.util.Date;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class UpdateUserResponse
+public class CreateUserResponse
 {
-    private String name;
-    private String job;
-    private Date updatedAt;
+    public String name;
+    public String job;
+    public String id;
+    public Date createdAt;
 }

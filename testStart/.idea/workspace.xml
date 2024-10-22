@@ -56,7 +56,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.tests.updateUserTest">
+  <component name="RunManager" selected="JUnit.tests.deleteUserTest">
     <configuration name="tests.createUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testStart" />
       <extension name="coverage">
@@ -73,6 +73,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="tests.deleteUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testStart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RestAssured.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RestAssured" />
+      <option name="MAIN_CLASS_NAME" value="RestAssured.tests" />
+      <option name="METHOD_NAME" value="deleteUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="tests.getResourceByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testStart" />
       <extension name="coverage">
@@ -84,22 +100,6 @@
       <option name="PACKAGE_NAME" value="RestAssured" />
       <option name="MAIN_CLASS_NAME" value="RestAssured.tests" />
       <option name="METHOD_NAME" value="getResourceByIdTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tests.getResourceListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="testStart" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RestAssured.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="RestAssured" />
-      <option name="MAIN_CLASS_NAME" value="RestAssured.tests" />
-      <option name="METHOD_NAME" value="getResourceListTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.tests.deleteUserTest" />
         <item itemvalue="JUnit.tests.updateUserTest" />
         <item itemvalue="JUnit.tests.createUserTest" />
         <item itemvalue="JUnit.tests.getResourceByIdTest" />
         <item itemvalue="JUnit.tests.getUsersListTest" />
-        <item itemvalue="JUnit.tests.getResourceListTest" />
       </list>
     </recent_temporary>
   </component>

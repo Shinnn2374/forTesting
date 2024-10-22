@@ -37,6 +37,13 @@ public class Specification
                 .build();
     }
 
+    public static ResponseSpecification responseSpec204()
+    {
+        return new ResponseSpecBuilder()
+                .expectStatusCode(204)
+                .build();
+    }
+
     public static ResponseSpecification responseSpec400()
     {
         return new ResponseSpecBuilder()

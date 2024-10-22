@@ -1,10 +1,10 @@
 package RestAssured;
 
-import RestAssured.pojos.UpdateUserResponse;
+import RestAssured.pojos.user.UpdateUserResponse;
 import RestAssured.pojos.datum.ResourceData;
 import RestAssured.pojos.datum.UserData;
-import RestAssured.pojos.User;
-import RestAssured.pojos.CreateUserResponse;
+import RestAssured.pojos.user.User;
+import RestAssured.pojos.user.CreateUserResponse;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -116,6 +116,18 @@ public class tests
         Assert.assertNotNull(response.getJob());
         Assert.assertNotNull(response.getUpdatedAt());
     }
+
+    @Test
+    public void deleteUserTest()
+    {
+        Specification.installSpecification(Specification.requestSpec(BASE_URL), Specification.responseSpec204());
+        given()
+        .when()
+                .delete("api/users/2")
+                .then().log().all();
+    }
+
+
 
 
 }

@@ -1,4 +1,4 @@
-package RestAssured.pojos;
+package RestAssured.pojos.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
