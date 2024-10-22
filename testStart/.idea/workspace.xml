@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d487ad8-793e-45f9-8d9a-15573685503b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/CreateUserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/UpdateUserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/register/SuccessfulReg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/register/SuccessfulRegResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/register/UnSuccessfulReg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/register/UnSuccessfulRegResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/Specification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssured/Specification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/ResourceData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/datum/ResourceData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/datum/UserData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssured/tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,10 +40,12 @@
     "JUnit.appleTest.checkHrefArticul.executor": "Run",
     "JUnit.appleTest.executor": "Run",
     "JUnit.tests.createUserTest.executor": "Run",
+    "JUnit.tests.deleteUserTest.executor": "Run",
     "JUnit.tests.getResourceByIdTest.executor": "Run",
     "JUnit.tests.getResourceListTest.executor": "Run",
     "JUnit.tests.getUsersListTest.executor": "Run",
     "JUnit.tests.singleUserNotFoundTest.executor": "Run",
+    "JUnit.tests.successfulReg.executor": "Run",
     "JUnit.tests.updateUserTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -56,7 +56,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.tests.deleteUserTest">
+  <component name="RunManager" selected="JUnit.tests.unSuccessfulReg">
     <configuration name="tests.createUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testStart" />
       <extension name="coverage">
@@ -89,7 +89,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tests.getResourceByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="tests.successfulReg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testStart" />
       <extension name="coverage">
         <pattern>
@@ -99,13 +99,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="RestAssured" />
       <option name="MAIN_CLASS_NAME" value="RestAssured.tests" />
-      <option name="METHOD_NAME" value="getResourceByIdTest" />
+      <option name="METHOD_NAME" value="successfulReg" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tests.getUsersListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="tests.unSuccessfulReg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testStart" />
       <extension name="coverage">
         <pattern>
@@ -115,7 +115,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="RestAssured" />
       <option name="MAIN_CLASS_NAME" value="RestAssured.tests" />
-      <option name="METHOD_NAME" value="getUsersListTest" />
+      <option name="METHOD_NAME" value="unSuccessfulReg" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.tests.unSuccessfulReg" />
+        <item itemvalue="JUnit.tests.successfulReg" />
         <item itemvalue="JUnit.tests.deleteUserTest" />
         <item itemvalue="JUnit.tests.updateUserTest" />
         <item itemvalue="JUnit.tests.createUserTest" />
-        <item itemvalue="JUnit.tests.getResourceByIdTest" />
-        <item itemvalue="JUnit.tests.getUsersListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +168,7 @@
       <workItem from="1729536771130" duration="40000" />
       <workItem from="1729536816881" duration="1456000" />
       <workItem from="1729620652894" duration="753000" />
-      <workItem from="1729621413506" duration="3263000" />
+      <workItem from="1729621413506" duration="3900000" />
     </task>
     <servers />
   </component>

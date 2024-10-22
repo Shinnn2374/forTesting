@@ -1,5 +1,9 @@
 package RestAssured;
 
+import RestAssured.pojos.register.SuccessfulReg;
+import RestAssured.pojos.register.SuccessfulRegResponse;
+import RestAssured.pojos.register.UnSuccessfulReg;
+import RestAssured.pojos.register.UnSuccessfulRegResponse;
 import RestAssured.pojos.user.UpdateUserResponse;
 import RestAssured.pojos.datum.ResourceData;
 import RestAssured.pojos.datum.UserData;
@@ -127,7 +131,35 @@ public class tests
                 .then().log().all();
     }
 
+    @Test
+    public void successfulReg()
+    {
+        Integer id = 4;
+        String token = "QpwL5tke4Pnpja7X4";
+        Specification.installSpecification(Specification.requestSpec(BASE_URL), Specification.responseSpec200());
+        SuccessfulReg reg = new SuccessfulReg("eve.holt@reqres.in","pistol");
+        SuccessfulRegResponse response = given()
+                .body(reg)
+                .post("api/register")
+                .then().log().all()
+                .extract().body().as(SuccessfulRegResponse.class);
+        Assert.assertEquals(response.getId(), id);
+        Assert.assertEquals(response.getToken(), token);
+    }
 
+    @Test
+    public  void unSuccessfulReg()
+    {
+        String error = "Missing password";
+        Specification.installSpecification(Specification.requestSpec(BASE_URL), Specification.responseSpec400());
+        UnSuccessfulReg reg = new UnSuccessfulReg("sydney@fife");
+        UnSuccessfulRegResponse response = given()
+                .body(reg)
+                .post("api/register")
+                .then().log().all()
+                .extract().body().as(UnSuccessfulRegResponse.class);
+        Assert.assertEquals(response.getError(), error);
+    }
 
 
 }
