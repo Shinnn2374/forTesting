@@ -1,9 +1,9 @@
-package PageObject.test;
+package PageObjectAppleInside.test;
 
 import org.junit.Assert;
 import org.junit.Test;
-import PageObject.pages.MainPage;
-import PageObject.pages.SearchPage;
+import PageObjectAppleInside.pages.MainPage;
+import PageObjectAppleInside.pages.SearchPage;
 
 public class appleTest extends BaseTest {
     private final static String BASE_URL = "https://appleinsider.ru/";

@@ -1,4 +1,4 @@
-package PageObject.test;
+package PageObjectAppleInside.test;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;

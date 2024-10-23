@@ -1,4 +1,4 @@
-package RestAssured.pojos.datum;
+package RestAssuredReqres.pojos.datum;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

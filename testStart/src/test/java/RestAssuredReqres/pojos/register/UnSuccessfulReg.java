@@ -1,4 +1,4 @@
-package RestAssured.pojos.login;
+package RestAssuredReqres.pojos.register;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class UnSucLoginResponse
+public class UnSuccessfulReg
 {
-    private String error;
+    private String email;
 }

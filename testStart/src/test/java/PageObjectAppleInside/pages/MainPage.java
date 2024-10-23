@@ -1,4 +1,4 @@
-package PageObject.pages;/*
+package PageObjectAppleInside.pages;/*
 main page https://appleinsider.ru/
  */
 

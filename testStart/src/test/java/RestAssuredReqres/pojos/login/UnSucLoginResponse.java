@@ -1,4 +1,4 @@
-package RestAssured.pojos.login;
+package RestAssuredReqres.pojos.login;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class SucLoginResponse
+public class UnSucLoginResponse
 {
-    private String token;
+    private String error;
 }

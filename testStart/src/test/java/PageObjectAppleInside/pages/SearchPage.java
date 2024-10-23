@@ -1,4 +1,4 @@
-package PageObject.pages;
+package PageObjectAppleInside.pages;
 
 import com.codeborne.selenide.ElementsCollection;
 

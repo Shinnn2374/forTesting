@@ -1,4 +1,4 @@
-package RestAssured.pojos.register;
+package RestAssuredReqres.pojos.register;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package RestAssured.pojos.register;
+package RestAssuredReqres.pojos.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,8 +7,8 @@ import lombok.NoArgsConstructor;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class SuccessfulRegResponse
+public class User
 {
-    private Integer id;
-    private String token;
+    private String name;
+    private String job;
 }

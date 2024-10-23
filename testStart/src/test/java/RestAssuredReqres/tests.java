@@ -1,18 +1,18 @@
-package RestAssured;
+package RestAssuredReqres;
 
-import RestAssured.pojos.login.SucLogin;
-import RestAssured.pojos.login.SucLoginResponse;
-import RestAssured.pojos.login.UnSucLogin;
-import RestAssured.pojos.login.UnSucLoginResponse;
-import RestAssured.pojos.register.SuccessfulReg;
-import RestAssured.pojos.register.SuccessfulRegResponse;
-import RestAssured.pojos.register.UnSuccessfulReg;
-import RestAssured.pojos.register.UnSuccessfulRegResponse;
-import RestAssured.pojos.user.UpdateUserResponse;
-import RestAssured.pojos.datum.ResourceData;
-import RestAssured.pojos.datum.UserData;
-import RestAssured.pojos.user.User;
-import RestAssured.pojos.user.CreateUserResponse;
+import RestAssuredReqres.pojos.login.SucLogin;
+import RestAssuredReqres.pojos.login.SucLoginResponse;
+import RestAssuredReqres.pojos.login.UnSucLogin;
+import RestAssuredReqres.pojos.login.UnSucLoginResponse;
+import RestAssuredReqres.pojos.register.SuccessfulReg;
+import RestAssuredReqres.pojos.register.SuccessfulRegResponse;
+import RestAssuredReqres.pojos.register.UnSuccessfulReg;
+import RestAssuredReqres.pojos.register.UnSuccessfulRegResponse;
+import RestAssuredReqres.pojos.user.UpdateUserResponse;
+import RestAssuredReqres.pojos.datum.ResourceData;
+import RestAssuredReqres.pojos.datum.UserData;
+import RestAssuredReqres.pojos.user.User;
+import RestAssuredReqres.pojos.user.CreateUserResponse;
 import org.junit.Assert;
 import org.junit.Test;
 
