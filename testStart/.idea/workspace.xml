@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d487ad8-793e-45f9-8d9a-15573685503b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectAppleInside/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectAppleInside/pages/SearchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectAppleInside/test/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/test/appleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectAppleInside/test/appleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/Specification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssuredReqres/Specification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/datum/ResourceData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssuredReqres/pojos/datum/ResourceData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/datum/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssuredReqres/pojos/datum/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/login/SucLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssuredReqres/pojos/login/SucLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/login/SucLoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssuredReqres/pojos/login/SucLoginResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/login/UnSucLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssuredReqres/pojos/login/UnSucLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/login/UnSucLoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssuredReqres/pojos/login/UnSucLoginResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/register/SuccessfulReg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssuredReqres/pojos/register/SuccessfulReg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/register/SuccessfulRegResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssuredReqres/pojos/register/SuccessfulRegResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/register/UnSuccessfulReg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssuredReqres/pojos/register/UnSuccessfulReg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/register/UnSuccessfulRegResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssuredReqres/pojos/register/UnSuccessfulRegResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/user/CreateUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssuredReqres/pojos/user/CreateUserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/user/UpdateUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssuredReqres/pojos/user/UpdateUserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/pojos/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssuredReqres/pojos/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestAssured/tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssuredReqres/tests.java" afterDir="false" />
-    </list>
+    <list default="true" id="4d487ad8-793e-45f9-8d9a-15573685503b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,7 +155,7 @@
       <workItem from="1729536816881" duration="1456000" />
       <workItem from="1729620652894" duration="753000" />
       <workItem from="1729621413506" duration="5046000" />
-      <workItem from="1729713266369" duration="652000" />
+      <workItem from="1729713266369" duration="713000" />
     </task>
     <servers />
   </component>
