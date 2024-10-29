@@ -25,8 +25,6 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
-	compileOnly("org.projectlombok:lombok:1.18.34")
-	annotationProcessor("org.projectlombok:lombok:1.18.34")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
@@ -40,7 +38,7 @@ dependencies {
 	testImplementation("io.qameta.allure:allure-junit5:2.12.1")
 	implementation("io.qameta.allure:allure-commandline:2.12.1")
 	testImplementation("io.qameta.allure:allure-assertj:2.12.1")
-	testImplementation("io.qameta.allure:allure-rest-assured:2.12.1")
+	testImplementation("io.qameta.allure:allure-rest-assured:4.4.0")
 	testImplementation("io.qameta.allure:allure-java-commons:2.12.1")
 
 }

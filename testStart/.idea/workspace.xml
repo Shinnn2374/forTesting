@@ -5,22 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d487ad8-793e-45f9-8d9a-15573685503b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/Specification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/datum/ResourceData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/datum/UserData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/login/SucLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/login/SucLoginResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/login/UnSucLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/login/UnSucLoginResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/register/SuccessfulReg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/register/SuccessfulRegResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/register/UnSuccessfulReg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/register/UnSuccessfulRegResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/user/CreateUserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/user/UpdateUserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleTest/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/datum/ResourceData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/datum/ResourceData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/datum/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/datum/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/login/SucLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/login/SucLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/login/SucLoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/login/SucLoginResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/login/UnSucLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/login/UnSucLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/login/UnSucLoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/login/UnSucLoginResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/register/SuccessfulReg.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/register/SuccessfulReg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/register/SuccessfulRegResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/register/SuccessfulRegResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/register/UnSuccessfulReg.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/register/UnSuccessfulReg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/register/UnSuccessfulRegResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/register/UnSuccessfulRegResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/user/CreateUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/user/CreateUserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/user/UpdateUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/user/UpdateUserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/user/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +175,7 @@
       <workItem from="1730143385652" duration="26000" />
       <workItem from="1730143417771" duration="1911000" />
       <workItem from="1730151704024" duration="854000" />
+      <workItem from="1730197911911" duration="962000" />
     </task>
     <servers />
   </component>
