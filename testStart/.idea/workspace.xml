@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d487ad8-793e-45f9-8d9a-15573685503b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4d487ad8-793e-45f9-8d9a-15573685503b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +44,7 @@
     "JUnit.tests.updateUserTest.executor": "Run",
     "Maven.testStart [clean].executor": "Run",
     "Maven.testStart [install].executor": "Run",
+    "Maven.testStart [io.qameta.allure:allure-maven:2.10.0:aggregate].executor": "Run",
     "Maven.testStart [io.qameta.allure:allure-maven:2.10.0:install].executor": "Run",
     "Maven.testStart [io.qameta.allure:allure-maven:2.10.0:report].executor": "Run",
     "Maven.testStart [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
@@ -171,7 +169,7 @@
       <workItem from="1730151704024" duration="854000" />
       <workItem from="1730197911911" duration="1368000" />
       <workItem from="1730282598841" duration="784000" />
-      <workItem from="1730283389388" duration="3088000" />
+      <workItem from="1730283389388" duration="3419000" />
     </task>
     <servers />
   </component>
