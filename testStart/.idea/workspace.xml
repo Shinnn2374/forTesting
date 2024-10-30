@@ -48,6 +48,7 @@
     "Maven.testStart [clean].executor": "Run",
     "Maven.testStart [install].executor": "Run",
     "Maven.testStart [io.qameta.allure:allure-maven:2.10.0:install].executor": "Run",
+    "Maven.testStart [io.qameta.allure:allure-maven:2.10.0:report].executor": "Run",
     "Maven.testStart [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
     "Maven.testStart [org.apache.maven.plugins:maven-install-plugin:3.1.2:install].executor": "Run",
     "Maven.testStart [verify].executor": "Run",
@@ -170,7 +171,7 @@
       <workItem from="1730151704024" duration="854000" />
       <workItem from="1730197911911" duration="1368000" />
       <workItem from="1730282598841" duration="784000" />
-      <workItem from="1730283389388" duration="1421000" />
+      <workItem from="1730283389388" duration="3088000" />
     </task>
     <servers />
   </component>
