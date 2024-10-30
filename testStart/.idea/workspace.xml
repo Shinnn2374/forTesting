@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d487ad8-793e-45f9-8d9a-15573685503b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +53,11 @@
     "Maven.testStart [io.qameta.allure:allure-maven:2.10.0:install].executor": "Run",
     "Maven.testStart [io.qameta.allure:allure-maven:2.10.0:report].executor": "Run",
     "Maven.testStart [io.qameta.allure:allure-maven:2.10.0:serve].executor": "Run",
+    "Maven.testStart [io.qameta.allure:allure-maven:2.9:aggregate].executor": "Run",
+    "Maven.testStart [io.qameta.allure:allure-maven:2.9:bulk].executor": "Run",
+    "Maven.testStart [io.qameta.allure:allure-maven:2.9:help].executor": "Run",
+    "Maven.testStart [io.qameta.allure:allure-maven:2.9:install].executor": "Run",
+    "Maven.testStart [io.qameta.allure:allure-maven:2.9:report].executor": "Run",
     "Maven.testStart [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
     "Maven.testStart [org.apache.maven.plugins:maven-install-plugin:3.1.2:install].executor": "Run",
     "Maven.testStart [verify].executor": "Run",
@@ -174,7 +180,9 @@
       <workItem from="1730151704024" duration="854000" />
       <workItem from="1730197911911" duration="1368000" />
       <workItem from="1730282598841" duration="784000" />
-      <workItem from="1730283389388" duration="3686000" />
+      <workItem from="1730283389388" duration="4263000" />
+      <workItem from="1730322139051" duration="129000" />
+      <workItem from="1730322280803" duration="817000" />
     </task>
     <servers />
   </component>
