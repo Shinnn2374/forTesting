@@ -1,23 +1,24 @@
-package com.example.RestAssuredReqres;
+package RestAssuredReqres;
 
-
-import com.example.RestAssuredReqres.pojos.datum.ResourceData;
-import com.example.RestAssuredReqres.pojos.datum.UserData;
-import com.example.RestAssuredReqres.pojos.login.SucLogin;
-import com.example.RestAssuredReqres.pojos.login.SucLoginResponse;
-import com.example.RestAssuredReqres.pojos.login.UnSucLogin;
-import com.example.RestAssuredReqres.pojos.login.UnSucLoginResponse;
-import com.example.RestAssuredReqres.pojos.register.SuccessfulReg;
-import com.example.RestAssuredReqres.pojos.register.SuccessfulRegResponse;
-import com.example.RestAssuredReqres.pojos.register.UnSuccessfulReg;
-import com.example.RestAssuredReqres.pojos.register.UnSuccessfulRegResponse;
-import com.example.RestAssuredReqres.pojos.user.CreateUserResponse;
-import com.example.RestAssuredReqres.pojos.user.UpdateUserResponse;
-import com.example.RestAssuredReqres.pojos.user.User;
+import RestAssuredReqres.pojos.login.SucLogin;
+import RestAssuredReqres.pojos.login.SucLoginResponse;
+import RestAssuredReqres.pojos.login.UnSucLogin;
+import RestAssuredReqres.pojos.login.UnSucLoginResponse;
+import RestAssuredReqres.pojos.register.SuccessfulReg;
+import RestAssuredReqres.pojos.register.SuccessfulRegResponse;
+import RestAssuredReqres.pojos.register.UnSuccessfulReg;
+import RestAssuredReqres.pojos.register.UnSuccessfulRegResponse;
+import RestAssuredReqres.pojos.user.UpdateUserResponse;
+import RestAssuredReqres.pojos.datum.ResourceData;
+import RestAssuredReqres.pojos.datum.UserData;
+import RestAssuredReqres.pojos.user.User;
+import RestAssuredReqres.pojos.user.CreateUserResponse;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.List;
+
+import static io.restassured.RestAssured.given;
 
 public class tests
 {
@@ -129,7 +130,7 @@ public class tests
     {
         Specification.installSpecification(Specification.requestSpec(BASE_URL), Specification.responseSpec204());
         given()
-                .when()
+        .when()
                 .delete("api/users/2")
                 .then().log().all();
     }

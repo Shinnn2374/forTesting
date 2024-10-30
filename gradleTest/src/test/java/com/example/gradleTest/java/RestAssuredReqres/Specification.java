@@ -1,4 +1,4 @@
-package com.example.RestAssuredReqres;
+package RestAssuredReqres;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;

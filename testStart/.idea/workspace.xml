@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d487ad8-793e-45f9-8d9a-15573685503b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../gradleTest/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../gradleTest/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/Specification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/datum/ResourceData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/datum/UserData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/login/SucLogin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/login/SucLoginResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/login/UnSucLogin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/login/UnSucLoginResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/register/SuccessfulReg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/register/SuccessfulRegResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/register/UnSuccessfulReg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/register/UnSuccessfulRegResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/user/CreateUserResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/user/UpdateUserResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/pojos/user/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradleTest/src/test/java/com/example/RestAssuredReqres/tests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,46 +45,46 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.All in testStart.executor": "Run",
-    "JUnit.appleTest.checkHrefArticul.executor": "Run",
-    "JUnit.appleTest.executor": "Run",
-    "JUnit.tests.createUserTest.executor": "Run",
-    "JUnit.tests.deleteUserTest.executor": "Run",
-    "JUnit.tests.executor": "Run",
-    "JUnit.tests.getResourceByIdTest.executor": "Run",
-    "JUnit.tests.getResourceListTest.executor": "Run",
-    "JUnit.tests.getUsersListTest.executor": "Run",
-    "JUnit.tests.singleUserNotFoundTest.executor": "Run",
-    "JUnit.tests.successfulReg.executor": "Run",
-    "JUnit.tests.unSuccessfulReg.executor": "Run",
-    "JUnit.tests.updateUserTest.executor": "Run",
-    "Maven.testStart [clean].executor": "Run",
-    "Maven.testStart [install].executor": "Run",
-    "Maven.testStart [io.qameta.allure:allure-maven:2.10.0:aggregate].executor": "Run",
-    "Maven.testStart [io.qameta.allure:allure-maven:2.10.0:bulk].executor": "Run",
-    "Maven.testStart [io.qameta.allure:allure-maven:2.10.0:help].executor": "Run",
-    "Maven.testStart [io.qameta.allure:allure-maven:2.10.0:install].executor": "Run",
-    "Maven.testStart [io.qameta.allure:allure-maven:2.10.0:report].executor": "Run",
-    "Maven.testStart [io.qameta.allure:allure-maven:2.10.0:serve].executor": "Run",
-    "Maven.testStart [io.qameta.allure:allure-maven:2.9:aggregate].executor": "Run",
-    "Maven.testStart [io.qameta.allure:allure-maven:2.9:bulk].executor": "Run",
-    "Maven.testStart [io.qameta.allure:allure-maven:2.9:help].executor": "Run",
-    "Maven.testStart [io.qameta.allure:allure-maven:2.9:install].executor": "Run",
-    "Maven.testStart [io.qameta.allure:allure-maven:2.9:report].executor": "Run",
-    "Maven.testStart [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
-    "Maven.testStart [org.apache.maven.plugins:maven-install-plugin:3.1.2:install].executor": "Run",
-    "Maven.testStart [verify].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/mihail/Desktop/git/forTesting/testStart",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.All in testStart.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.appleTest.checkHrefArticul.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.appleTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.tests.createUserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.tests.deleteUserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.tests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.tests.getResourceByIdTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.tests.getResourceListTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.tests.getUsersListTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.tests.singleUserNotFoundTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.tests.successfulReg.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.tests.unSuccessfulReg.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.tests.updateUserTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.testStart [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.testStart [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.testStart [io.qameta.allure:allure-maven:2.10.0:aggregate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.testStart [io.qameta.allure:allure-maven:2.10.0:bulk].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.testStart [io.qameta.allure:allure-maven:2.10.0:help].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.testStart [io.qameta.allure:allure-maven:2.10.0:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.testStart [io.qameta.allure:allure-maven:2.10.0:report].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.testStart [io.qameta.allure:allure-maven:2.10.0:serve].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.testStart [io.qameta.allure:allure-maven:2.9:aggregate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.testStart [io.qameta.allure:allure-maven:2.9:bulk].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.testStart [io.qameta.allure:allure-maven:2.9:help].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.testStart [io.qameta.allure:allure-maven:2.9:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.testStart [io.qameta.allure:allure-maven:2.9:report].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.testStart [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.testStart [org.apache.maven.plugins:maven-install-plugin:3.1.2:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.testStart [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mihail/Desktop/git/forTesting/testStart&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.tests">
     <configuration name="All in testStart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testStart" />
@@ -183,6 +198,7 @@
       <workItem from="1730283389388" duration="4263000" />
       <workItem from="1730322139051" duration="129000" />
       <workItem from="1730322280803" duration="817000" />
+      <workItem from="1730323782299" duration="333000" />
     </task>
     <servers />
   </component>

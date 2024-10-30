@@ -25,22 +25,10 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
+	compileOnly("org.projectlombok:lombok:1.18.34")
+	annotationProcessor("org.projectlombok:lombok:1.18.34")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-
-	implementation("io.github.bonigarcia:webdrivermanager:5.6.4")
-	implementation("org.seleniumhq.selenium:selenium-api:3.141.59")
-	implementation("org.seleniumhq.selenium:selenium-java:3.141.59")
-	implementation("com.codeborne:selenide:5.20.3")
-	testImplementation("junit:junit:4.13.2")
-	implementation("org.seleniumhq.selenium:selenium-chrome-driver:3.141.59")
-	testImplementation("org.aspectj:aspectjweaver:1.9.5")
-	testImplementation("io.qameta.allure:allure-junit5:2.12.1")
-	implementation("io.qameta.allure:allure-commandline:2.12.1")
-	testImplementation("io.qameta.allure:allure-assertj:2.12.1")
-	testImplementation("io.qameta.allure:allure-rest-assured:4.4.0")
-	testImplementation("io.qameta.allure:allure-java-commons:2.12.1")
-
 }
 
 tasks.withType<Test> {
