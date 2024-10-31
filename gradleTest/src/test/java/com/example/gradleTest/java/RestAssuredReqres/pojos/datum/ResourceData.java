@@ -1,12 +1,6 @@
-package RestAssuredReqres.pojos.datum;
+package com.example.gradleTest.java.RestAssuredReqres.pojos.datum;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
 
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
 public class ResourceData
 {
     private Integer id;

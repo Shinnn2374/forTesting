@@ -14,7 +14,7 @@ import RestAssuredReqres.pojos.datum.UserData;
 import RestAssuredReqres.pojos.user.User;
 import RestAssuredReqres.pojos.user.CreateUserResponse;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.List;
 

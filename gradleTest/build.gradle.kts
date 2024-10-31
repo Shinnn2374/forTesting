@@ -1,16 +1,14 @@
 plugins {
 	java
-	id("org.springframework.boot") version "3.3.5"
-	id("io.spring.dependency-management") version "1.1.6"
+	id("org.springframework.boot") version "3.1.2"
+	id("io.spring.dependency-management") version "1.1.2"
 }
 
 group = "com.example"
 version = "0.0.1-SNAPSHOT"
 
 java {
-	toolchain {
-		languageVersion = JavaLanguageVersion.of(22)
-	}
+	sourceCompatibility = JavaVersion.VERSION_22
 }
 
 configurations {
@@ -25,8 +23,8 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
-	compileOnly("org.projectlombok:lombok:1.18.34")
-	annotationProcessor("org.projectlombok:lombok:1.18.34")
+	compileOnly("org.projectlombok:lombok")
+	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
