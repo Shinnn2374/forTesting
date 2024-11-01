@@ -4,8 +4,12 @@ import com.example.gradleTest.restAssured.pojos.PostMethod.PostUserRequest;
 import com.example.gradleTest.restAssured.pojos.PostMethod.PostUserResponse;
 import com.example.gradleTest.restAssured.pojos.Reg.SucReq;
 import com.example.gradleTest.restAssured.pojos.Reg.SucRes;
+import com.example.gradleTest.restAssured.pojos.Reg.UnsucReq;
+import com.example.gradleTest.restAssured.pojos.Reg.UnsucRes;
 import com.example.gradleTest.restAssured.pojos.datum.ResourceData;
 import com.example.gradleTest.restAssured.pojos.datum.UserData;
+import com.example.gradleTest.restAssured.pojos.log.SucLogReq;
+import com.example.gradleTest.restAssured.pojos.log.SucLogRes;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
@@ -123,7 +127,7 @@ public class tests
     }
 
     @Test
-    public void successReg()
+    public void successRegTest()
     {
         Integer id = 4;
         Specification.installSpecification(Specification.requestSpecification(url), Specification.responseSpec200());
@@ -138,9 +142,48 @@ public class tests
     }
 
     @Test
-    public void unsuccessReg()
+    public void unsuccessRegTest()
     {
         String assertError = "Missing password";
+        UnsucReq request = new UnsucReq("sydney@fife");
+        Specification.installSpecification(Specification.requestSpecification(url), Specification.responseSpec400());
+        UnsucRes response = given()
+                .when()
+                .body(request)
+                .post("api/register")
+                .then().log().all()
+                .extract().body().jsonPath().getObject("", UnsucRes.class);
+        Assert.assertEquals(assertError,response.getError());
+    }
+
+    @Test
+    public void successLogTest()
+    {
+        SucLogRes res = new SucLogRes("QpwL5tke4Pnpja7X4");
+        SucLogReq request = new SucLogReq("eve.holt@reqres.in","cityslicka");
+        Specification.installSpecification(Specification.requestSpecification(url), Specification.responseSpec200());
+        SucLogRes response = given()
+                .when()
+                .body(request)
+                .post("api/login")
+                .then().log().all()
+                .extract().body().jsonPath().getObject("", SucLogRes.class);
+        Assert.assertEquals(response.getToken(),res.getToken());
+    }
+
+    @Test
+    public void unsuccessLogTest()
+    {
+        String error = "Missing password";
+        UnsucReq request = new UnsucReq("peter@klaven");
+        Specification.installSpecification(Specification.requestSpecification(url), Specification.responseSpec400());
+        UnsucRes res = given()
+                .when()
+                .body(request)
+                .post("api/login")
+                .then().log().all()
+                .extract().body().jsonPath().getObject("", UnsucRes.class);
+        Assert.assertEquals(error,res.getError());
         
     }
 
