@@ -13,8 +13,8 @@ import RestAssuredReqres.pojos.datum.ResourceData;
 import RestAssuredReqres.pojos.datum.UserData;
 import RestAssuredReqres.pojos.user.User;
 import RestAssuredReqres.pojos.user.CreateUserResponse;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.testng.Assert;
 
 import java.util.List;
 
@@ -34,6 +34,7 @@ public class tests
                 .then().log().all()
                 .extract().jsonPath().getList("data", UserData.class);
         Assert.assertNotNull(users);
+
     }
 
     @Test
