@@ -1,10 +1,11 @@
 package com.example.gradleTest.restAssured;
 
-import com.example.gradleTest.restAssured.PostMethod.PostUserRequest;
-import com.example.gradleTest.restAssured.PostMethod.PostUserResponse;
+import com.example.gradleTest.restAssured.pojos.PostMethod.PostUserRequest;
+import com.example.gradleTest.restAssured.pojos.PostMethod.PostUserResponse;
+import com.example.gradleTest.restAssured.pojos.Reg.SucReq;
+import com.example.gradleTest.restAssured.pojos.Reg.SucRes;
 import com.example.gradleTest.restAssured.pojos.datum.ResourceData;
 import com.example.gradleTest.restAssured.pojos.datum.UserData;
-import lombok.SneakyThrows;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
@@ -121,6 +122,26 @@ public class tests
                 .then().log().all();
     }
 
+    @Test
+    public void successReg()
+    {
+        Integer id = 4;
+        Specification.installSpecification(Specification.requestSpecification(url), Specification.responseSpec200());
+        SucReq request = new SucReq("eve.holt@reqres.in","pistol");
+        SucRes response = given()
+                .when()
+                .body(request)
+                .post("api/register")
+                .then().log().all()
+                .extract().body().jsonPath().getObject("", SucRes.class);
+        Assert.assertEquals(response.getId(),id);
+    }
 
+    @Test
+    public void unsuccessReg()
+    {
+        String assertError = "Missing password";
+        
+    }
 
 }

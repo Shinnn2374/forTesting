@@ -1,4 +1,4 @@
-package com.example.gradleTest.restAssured.PostMethod;
+package com.example.gradleTest.restAssured.pojos.PostMethod;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
