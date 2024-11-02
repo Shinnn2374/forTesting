@@ -1,5 +1,6 @@
-package com.example.gradleTest.restAssured;
+package com.example.gradleTest;
 
+import com.example.gradleTest.restAssured.Specification;
 import com.example.gradleTest.restAssured.pojos.PostMethod.PostUserRequest;
 import com.example.gradleTest.restAssured.pojos.PostMethod.PostUserResponse;
 import com.example.gradleTest.restAssured.pojos.Reg.SucReq;

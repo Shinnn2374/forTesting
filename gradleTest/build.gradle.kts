@@ -46,6 +46,12 @@ dependencies {
 	testImplementation("io.qameta.allure:allure-assertj:2.12.1")
 	testImplementation("io.qameta.allure:allure-rest-assured:2.12.1")
 	testImplementation("io.qameta.allure:allure-java-commons:2.12.1")
+
+	//cucumber
+	testImplementation("io.cucumber:cucumber-java:7.1.0")
+
+	//selenide
+	testImplementation("com.codeborne:selenide:6.1.1")
 }
 
 tasks.withType<Test> {
