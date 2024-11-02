@@ -10,6 +10,8 @@ import com.example.gradleTest.restAssured.pojos.datum.ResourceData;
 import com.example.gradleTest.restAssured.pojos.datum.UserData;
 import com.example.gradleTest.restAssured.pojos.log.SucLogReq;
 import com.example.gradleTest.restAssured.pojos.log.SucLogRes;
+import io.qameta.allure.Description;
+import io.qameta.allure.Owner;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
@@ -22,6 +24,8 @@ public class tests
     private static final String url = "https://reqres.in/";
 
     @Test
+    @Owner("Борисов М.Р.")
+    @Description("Тест проверяющий возвращение полного списка пользователей")
     public void getAllTest()
     {
         Specification.installSpecification(Specification.requestSpecification(url), Specification.responseSpec200());
