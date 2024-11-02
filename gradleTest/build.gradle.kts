@@ -31,7 +31,6 @@ dependencies {
 	annotationProcessor("org.projectlombok:lombok")
 	implementation("com.google.code.gson:gson:2.11.0")
 
-
 	testImplementation("org.aspectj:aspectjweaver:1.9.5")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
