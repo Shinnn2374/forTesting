@@ -184,7 +184,7 @@ public class tests
                 .then().log().all()
                 .extract().body().jsonPath().getObject("", UnsucRes.class);
         Assert.assertEquals(error,res.getError());
-        
+
     }
 
 }
