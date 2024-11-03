@@ -1,11 +1,11 @@
 package com.example.gradleTest.cucumber.steps;
 
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.Keys;
 
-import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class KlavaGonkiStep {
@@ -15,6 +15,12 @@ public class KlavaGonkiStep {
     private final SelenideElement highLight = $x("//span[@id='typefocus']");
     private final SelenideElement inputField = $x("//input[@id='inputtext']");
     private final SelenideElement afterFocus = $x("//span[@id='afterfocus']");
+
+    private String getCurrentWord()
+    {
+       return highLight.getText().replaceAll("с","c").replaceAll("о","o");
+
+    }
 
 
     @When("Начинаем игру")
@@ -38,8 +44,21 @@ public class KlavaGonkiStep {
     {
         while(true)
         {
-            String currentWord = highLight.getText();
-            String
+            String currentWord = getCurrentWord();
+            String afterFocusSimbol = afterFocus.getText();
+            inputField.sendKeys(currentWord);
+            if (afterFocusSimbol.equals("."))
+            {
+                inputField.sendKeys(".");
+                break;
+            }
+            inputField.sendKeys(Keys.SPACE);
         }
+    }
+
+    @Then("Фиксируем что игра завершена и символов в минуту больше чем {int}")
+    public void endGame(int minValue)
+    {
+        System.out.println(minValue);
     }
 }
