@@ -10,6 +10,7 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class KlavaGonkiStep {
 
+    private final SelenideElement goToStartGame = $x("//a[@class=\"title\"]");
     private final SelenideElement closeButton = $x("//input[@value='Закрыть']");
     private final SelenideElement startButton = $x("//a[@id='host_start']");
     private final SelenideElement highLight = $x("//span[@id='typefocus']");
@@ -22,8 +23,13 @@ public class KlavaGonkiStep {
 
     }
 
+    @When("Переходим на быструю игру")
+    public void переходимНаБыструюИгру()
+    {
+        goToStartGame.click();
+    }
 
-    @When("Начинаем игру")
+    @And("Начинаем игру")
     public void startGame()
     {
         closeButton.click();
@@ -55,10 +61,4 @@ public class KlavaGonkiStep {
             inputField.sendKeys(Keys.SPACE);
         }
     }
-
-//    @Then("Фиксируем что игра завершена и символов в минуту больше чем {int}")
-//    public void endGame(int minValue)
-//    {
-//        String result =
-//    }
 }
