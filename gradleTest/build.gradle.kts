@@ -31,6 +31,8 @@ dependencies {
 	annotationProcessor("org.projectlombok:lombok")
 	implementation("com.google.code.gson:gson:2.11.0")
 
+
+	testImplementation("org.apache.httpcomponents.core5:httpcore5:5.2.4")
 	testImplementation("org.aspectj:aspectjweaver:1.9.5")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
@@ -48,10 +50,10 @@ dependencies {
 	testImplementation("io.qameta.allure:allure-java-commons:2.12.1")
 
 	//cucumber
-	testImplementation("io.cucumber:cucumber-java:7.1.0")
+	testImplementation("io.cucumber:cucumber-java:7.16.1")
 
 	//selenide
-	testImplementation("com.codeborne:selenide:6.1.1")
+	testImplementation("com.codeborne:selenide:7.3.1")
 }
 
 tasks.withType<Test> {

@@ -56,9 +56,9 @@ public class KlavaGonkiStep {
         }
     }
 
-    @Then("Фиксируем что игра завершена и символов в минуту больше чем {int}")
-    public void endGame(int minValue)
-    {
-        System.out.println(minValue);
-    }
+//    @Then("Фиксируем что игра завершена и символов в минуту больше чем {int}")
+//    public void endGame(int minValue)
+//    {
+//        String result =
+//    }
 }
