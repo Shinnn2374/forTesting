@@ -1,5 +1,5 @@
 Feature: Тест кейс для сайта appleInsider.ru
-  Background: Я нахожусь на главном странице сайта
+  Background: Начало теста
     Given Открываем сайт "https://appleinsider.ru/"
 
   Scenario: Заходим на главную страницу, вбиваем в поиск фразу и обрабатываем полученные данные
