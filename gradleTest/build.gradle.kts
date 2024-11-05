@@ -52,6 +52,7 @@ dependencies {
 	//cucumber
 	testImplementation("io.cucumber:cucumber-java:7.16.1")
 
+
 	//selenide
 	testImplementation("com.codeborne:selenide:7.3.1")
 }

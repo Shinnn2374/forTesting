@@ -190,5 +190,4 @@ public class tests
                 .extract().body().jsonPath().getObject("", UnsucRes.class);
         Assert.assertEquals(error,res.getError());
     }
-
 }

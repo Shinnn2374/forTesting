@@ -36,6 +36,6 @@ public class AppleInsiderSteps {
     {
         String href = articleTitles.first().getAttribute("href");
         Assert.assertNotNull(href);
-        Assert.assertTrue("iphone".contains(href));
+        Assert.assertTrue("iphone", href.contains("iphone"));
     }
 }
