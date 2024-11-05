@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class KlavaGonkiStep {
 
-    private final SelenideElement goToStartGame = $x("//a[@class=\"title\"]");
+    private final SelenideElement goToStartGame = $x("//a[@class='title']");
     private final SelenideElement closeButton = $x("//input[@value='Закрыть']");
     private final SelenideElement startButton = $x("//a[@id='host_start']");
     private final SelenideElement highLight = $x("//span[@id='typefocus']");
