@@ -1,8 +1,7 @@
-package com.example.gradleTest.cucumber.steps;
+package com.example.gradleTest.cucumber.clavaGonki;
 
 import com.codeborne.selenide.SelenideElement;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
 

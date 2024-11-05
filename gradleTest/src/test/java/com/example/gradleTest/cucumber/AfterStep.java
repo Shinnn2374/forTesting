@@ -1,4 +1,4 @@
-package com.example.gradleTest.cucumber.steps;
+package com.example.gradleTest.cucumber;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
